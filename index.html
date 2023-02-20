@@ -20,7 +20,7 @@
     <main class="main">
         <section class="frontpage">
             <h1 class="frontpage-big-text">Discover Your Life, Travel Where You Want</h1>
-            <p class="frontpage-small-text">Would you explore natur paradise in the world, let’s find the best destination in world with us.</p>
+            <h4 class="frontpage-small-text">Would you explore natur paradise in the world, let’s find the best destination in world with us.</p>
         </section>
         <section class="offer-selector">
             <div class="offer">
@@ -28,17 +28,25 @@
                     <img class="offer-icon" src="./content/plane1.svg" alt="plane">
                     Flight
                 </button>
-                <div class="flight-content">
+                <article class="flight-content">
                     <div class="place-selector">
                         <div class="place-selector-from">
                             <p>Living from</p>
-                            <input type="text" id="text">
+                            <select class="selector">
+                                <option value = "Dubai">Dubai</option>
+                                <option value = "New York">New York</option>
+                                <option value = "Kyiv">Kyiv</option>
+                            </select>
                         </div>
                         <img class="round-sector" src="./content/Ring.svg" alt="circle">
                         <img class="plane-icon" src="./content/plane2.svg" alt="plane-icon">
                         <div class="place-selector-to">
                             <p>Going to</p>
-                            <input type="text" id="text">
+                            <select class="selector">
+                                <option value = "Dubai">Dubai</option>
+                                <option value = "New York">New York</option>
+                                <option value = "Kyiv">Kyiv</option>
+                            </select>
                         </div>
                     </div>
                     <div class="date-selector">
@@ -58,7 +66,7 @@
                     <button class="search-button">
                         <img class="search" src="./content/search.png">
                     </button>
-                </div>
+                </article>
             </div>
             <div class="offer">
                 
@@ -66,9 +74,9 @@
                     <img class="offer-icon" src="./content/hotel.svg" alt="hotel">
                     Hotel
                 </button>
-                <div class="hotel-content">
+                <article class="hotel-content">
                     <p>#</p>
-                </div>
+                </article>
             </div>
         </section>
         <section class="offers">
@@ -77,36 +85,36 @@
                 <button class="target-select">Team</button>
                 <div class="target-content">
                     <div class="target-content-element">
-                        <h4 class="vertical">14 FEB 2022</h4>
+                        <time class="vertical">14 FEB 2022</time>
                         <img class="target-content-element-photo" src="./content/picture1.png" alt="picture1">
                         <div class="tags">
-                            <p>Relax</p>
-                            3 Days, 3 Nights
+                            <span class="location">Relax</span>
+                            <span class="duration">Days, 3 Nights</span> 
                         </div>
-                        <h4>Loga Sea</h4>
-                        <p><b>700$</b>/person</p>
+                        <span class="location">Loga Sea</span>
+                        <span class="price">700$/person</span>
                         <button>Book now</button>
                     </div>
                     <div class="target-content-element">
-                        <h4 class="vertical">18 JUN 2022</h4>
+                        <time class="vertical">18 JUN 2022</time>
                         <img class="target-content-element-photo" src="./content/picture2.png" alt="picture2">
                         <div class="tags">
-                            <p>Adventure</p>
-                            4 Days, 3 Nights
+                            <span class="tags">Adventure</span>
+                            <span class="duration">4 Days, 3 Nights</span>
                         </div>
-                        <h4>Ansgar Scheffold</h4>
-                        <p><b>400$</b>/person</p>
+                        <span class="location">Ansgar Scheffold</span>
+                        <span class="price">400$/person</span>
                         <button>Book now</button>
                     </div>
                     <div class="target-content-element">
                         <h4 class="vertical">22 DEC 2022</h4>
                         <img class="target-content-element-photo" src="./content/picture3.png" alt="picture3">
                         <div class="tags">
-                            <p>Relax</p>
-                            7 Days, 6 Nights
+                            <span class="tags">Relax</span>
+                            <span class="duration">7 Days, 6 Nights</span>
                         </div>
-                        <h4>Loga Sea</h4>
-                        <p><b>700$</b>/person</p>
+                        <span class="location">Loga Sea</span>
+                        <span class="price">700$/person</span>
                         <button>Book now</button>
                     </div>
                     
