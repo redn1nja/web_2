@@ -273,9 +273,23 @@ body{
     color: rgba(0, 0, 0, 0.5);
     letter-spacing: 0.5em;
 }
+.tags{
+    margin-left: 10px;
+}
+.location{
+    margin-left: 10px;
+}
+.pricing{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
 .data-section{
+    left: 10%;
     position: relative;
     display: flex;
+    width: 80%;
     
 }
 .photo{
