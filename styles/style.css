@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
 }
 
 .header {
@@ -17,11 +18,13 @@ body{
 
 .selection-bar{
     position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .image-background{
     border: none;
-    /* position:absolute; */
     width: 100%;
     height: auto;
 }
@@ -81,10 +84,11 @@ body{
 .main{
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    gap: 250px;
     width: 100%;
     height: 100%;
-    top: 35%;
+    top:20vw;
 
 }
 
@@ -99,7 +103,7 @@ body{
     color:white;
     text-align: center;
     align-items: center;
-    top: -50vw;
+    top: -70vw;
 }
 
 .frontpage-big-text{
@@ -120,40 +124,44 @@ body{
 
 .offer{
     display: flex;
-    margin-left:10%;
-    width: 15%;
+    width: fit-content;
     background-color: white;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    /* padding: 10px; */
+    z-index: 2;
 }
 
 .offer-selector{
-    width: 100%;
+    width: 87%;
+    left:13%;
     position: absolute;
     display: flex;
     flex-direction: column;
-    left: 0;
-    bottom: 0;
+    justify-content: center;
+    bottom: -11vw;
 }
 
 .buttons{
     position: relative;
     display: flex;
-    justify-content:space-around;
-    height: 100px;
-    align-items: center;
-    width: 100%;
+    padding: 15px 20px;
 }
 
 .offer-tabs{
     position: relative;
-    height: 60%;
-    width: 40%;
+    height: 100%;
+    width: 120px;
+    height: 66px;
     background-color: white;
     border: none;
-    border-radius: 20%;
+    border-radius: 25px;
+    font-size: 1vw;
+    text-align: center;
+    font-weight: 500;
     display: flex;
     align-items: center;
+    padding: 10px 10px 20px 10px;
 }
 
 .offer-tabs:focus{
@@ -169,24 +177,79 @@ body{
     right: 10%;
     width: 80%;
     background-color: white;
-    position: sticky;
     display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
     justify-content: space-between;
+    align-items: center;
     border: none;
-    border-top-right-radius: 20%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 50px 50px 50px;
+    padding: 60px 48px;
 }
 
+.place-selector{
+    display: flex;
+    border: 2px solid rgba(172, 172, 172, 0.5);
+    border-radius: 25px;
+    gap: 40px;
+    padding: 40px 22px;
+    align-items: center;
+}
 
+.content-selector{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.content-selector p{
+    color: #00000080;
+    font-size: 18px;
+}
+
+.selector{
+    border: none;
+    background: none;
+    display: flex;
+    appearance: none;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    padding-right: 15px;
+}
+
+.date{
+    border: none;
+    appearance: none;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    padding-right: 10px;
+    background: none;
+
+}
+.date-selector{
+    display: flex;
+    border: 2px solid rgba(172, 172, 172, 0.5);
+    border-radius: 25px;
+    gap: 40px;
+    padding: 40px 22px;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .search-button{
     position: relative;
-    width: 10%;
-    height: 50%;
+    padding: 50px;
+    width: fit-content;
+    background: #3E86F5CC;
+    border: none;
+    border-radius: 65px;
 }
 
-.search{
-    max-width: 10%;
-}
+
 
 .place-selector{
     display: flex;
@@ -194,6 +257,8 @@ body{
 .combine-pic{
     position: relative;
     display: flex;
+    width: 40px;
+    height: 40px;
 }
 .round-sector{
     width: 100%;
@@ -211,6 +276,7 @@ body{
 }
 .date-selector{
     display: flex;
+    align-items: center;
 }
 
 .t-selectors{
@@ -220,12 +286,14 @@ body{
 }
 .offers{
     position: relative;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 .target{
+    position: relative;
     width:100%;
     align-items: center;
     display: flex;
@@ -242,19 +310,19 @@ body{
 }
 .special-offers{
     position: relative;
-    /* color: white; */
     font-weight: 600;
     font-size: 3vw;
 
 }
+.oneline{
+    display: flex;
+}
 .target-content-element{
-    /* position: relative; */
     padding: 20px 13px 30px 27px;
-    /* width: 20%; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
     background-color: white;
     border: none;
     border-radius: 10%;
@@ -274,7 +342,6 @@ body{
 
 .vertical{
     position: relative;
-    transform-origin: 0 0;
     writing-mode:vertical-rl;
     font-weight: 500;
     font-size: 1vw;
@@ -291,7 +358,17 @@ body{
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.pricing button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: #F2F6FF;
+    color: #3E86F5;
 }
 .data-section{
     left: 10%;
@@ -362,8 +439,94 @@ body{
 
 .destinations{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.destination-tabs{
+    display: flex;
+    justify-content: center;
+}
+.destination-choices{
+    display: flex;
+    gap: 40px;
+}
+
+.destination-example{
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.destination-example .destination-rating{
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 25px;
+    top: 24px;
+    right: 25px;
+    padding:1px 10px;
+    font-size: 12px;
+}
+.destination-text{
+    /* padding-top: 20px; */
+    padding-left:20px;
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.marker{
+    padding-left: 20px;
+
+}
+.quotes{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.quotation{
+    width: 75%;
+    position: relative;
+    /* left: 130px; */
+    display: flex;
+    /* justify-content: center; */
+    gap: 20px;
+}
+.quote{
+    position: relative;
+    /* width: 40%; */
+    background: #FFFFFF;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quote-icon{
+    padding: 10px 40px;
+    background: #FFFFFF;
+    position: absolute;
+    /* left: 50%; */
+    bottom: -3vw;
+    border: none;
+    border-radius:100%;
+}
+.quote-icon .destination-rating{
+    position: absolute;
+    top:10%;
+    right:18%;
+    background: #FFFFFF;
+    border-radius: 25px;
+}
+.quote-sign{
+    position: absolute;
+    /* left: 40%; */
+    top: 10%;
+}
 .site-footer{
     position: relative;
     display: flex;
@@ -371,5 +534,8 @@ body{
     justify-content: space-between;
     margin-left: 3%;
     margin-right: 3%;
+    bottom: -20vw;
 
 }
+
+

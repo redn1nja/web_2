@@ -27,7 +27,7 @@
             </div>
                 <article class="flight-content">
                     <div class="place-selector">
-                        <div class="place-selector-from">
+                        <div class="content-selector">
                             <p>Living from</p>
                             <select class="selector">
                                 <option value = "Dubai">Dubai</option>
@@ -39,7 +39,7 @@
                             <img class="round-sector" src="./content/Ring.svg" alt="circle">
                             <img class="plane-icon" src="./content/plane2.svg" alt="plane-icon">
                         </div>
-                        <div class="place-selector-to">
+                        <div class="content-selector">
                             <p>Going to</p>
                             <select class="selector">
                                 <option value = "Dubai">Dubai</option>
@@ -49,26 +49,29 @@
                         </div>
                     </div>
                     <div class="date-selector">
-                        <div class="date-selector-leave">
-                            <p>Leave</p>
-                            <img class="plane-to" src="./content/plane3.svg" alt="plane-from">
-                            <input type="date" id="date">
-                        </div><img class="offer-icon" src="./content/hotel.svg" alt="hotel">
+                        <div class="content-selector">
+                            <div class="oneline">
+                                <p>Leave</p>
+                                <img class="plane-to" src="./content/plane3.svg" alt="plane-from">
+                            </div>
+                            <input class="date" type="date" id="date">
+                        </div>
                         <div class="combine-pic">
                             <img class="round-sector" src="./content/Ring.svg" alt="circle">
                             <img class="calendar-icon" src="./content/calendar.svg" alt="plane-icon">
                         </div>
-                        <div class="date-selector-leave">
-                            <p>Leave</p>
-                            <img class="plane-to" src="./content/plane3.svg" alt="plane-from">
-                            <input type="date" id="date">
+                        <div class="content-selector">
+                            <div class="oneline">
+                                <p>Leave</p>
+                                <img class="plane-to" src="./content/plane3.svg" alt="plane-from">
+                            </div>
+                            <input class="date" type="date" id="date">
                         </div>
                     </div>
                     <button class="search-button">
-                        <img class="search" src="./content/search.png">
+                        <img class="search" src="./content/search.svg">
                     </button>
                 </article>
-            
         </div>
     </div>
     <div class="header-div">
@@ -106,7 +109,7 @@
                             <div class="vertical">14 FEB 2022</div>
                         </div>
                         <div class="tags">
-                            <span class="tag">Relax</span>
+                            <span class="tag1">Relax</span>
                             <span class="duration">Days, 3 Nights</span> 
                         </div>
                         <span class="location">Loga Sea</span>
@@ -121,7 +124,7 @@
                             <div class="vertical">18 JUN 2022</div>
                         </div>
                         <div class="tags">
-                            <span class="tag">Adventure</span>
+                            <span class="tag2">Adventure</span>
                             <span class="duration">4 Days, 3 Nights</span>
                         </div>
                         <span class="location">Ansgar Scheffold</span>
@@ -136,7 +139,7 @@
                             <div class="vertical">22 DEC 2022</div>
                         </div>
                         <div class="tags">
-                            <span class="tag">Relax</span>
+                            <span class="tag11">Relax</span>
                             <span class="duration">7 Days, 6 Nights</span>
                         </div>
                         <span class="location">Loga Sea</span>
@@ -176,14 +179,19 @@
             <div class="destination-choice">
                 <div class="destination-tabs">
                     <button class="destination-tab">Popular</button>
+                    <button class="destination-tab">Adventure</button>
+                    <button class="destination-tab">Beath</button>
+                </div>
+                <div class="destination-choices">
+
                     <article class="destination-example">
                         <img class="destination-pic" src="./content/destination1.png" alt="destination1">
                         <div class="destination-rating">
                             <img class="star" src="./content/star.svg" alt="star">
                             3.4
                         </div>
-                    <h2 class="destination-text">Kina Mountain</h2>
-                    <img class="marker" src="./content/marker.svg" alt="marker"> Cambodia
+                        <h2 class="destination-text">Kina Mountain</h2>
+                        <img class="marker" src="./content/marker.svg" alt="marker"> Cambodia
                     </article>
                     <article class="destination-example">
                         <img class="destination-pic" src="./content/destination2.png" alt="destination1">
@@ -191,8 +199,8 @@
                             <img class="star" src="./content/star.svg" alt="star">
                             4.5
                         </div>
-                    <h2 class="destination-text">Kina Mountain</h2>
-                    <img class="marker" src="./content/marker.svg" alt="marker"> Cambodia
+                        <h2 class="destination-text">Kina Mountain</h2>
+                        <img class="marker" src="./content/marker.svg" alt="marker"> Cambodia
                     </article>
                     <article class="destination-example">
                         <img class="destination-pic" src="./content/destination3.png" alt="destination1">
@@ -200,8 +208,8 @@
                             <img class="star" src="./content/star.svg" alt="star">
                             4.2
                         </div>
-                    <h2 class="destination-text">Kina Mountain</h2>
-                    <img class="marker" src="./content/marker.svg" alt="marker"> Cambodia
+                        <h2 class="destination-text">Kina Mountain</h2>
+                        <img class="marker" src="./content/marker.svg" alt="marker"> Cambodia
                     </article>
                     <article class="destination-example">
                         <img class="destination-pic" src="./content/destination4.png" alt="destination1">
@@ -209,51 +217,45 @@
                             <img class="star" src="./content/star.svg" alt="star">
                             3.5
                         </div>
-                    <h2 class="destination-text">Kina Mountain</h2>
-                    <img class="marker" src="./content/marker.svg" alt="marker"> Cambodia
+                        <h2 class="destination-text">Kina Mountain</h2>
+                        <img class="marker" src="./content/marker.svg" alt="marker"> Cambodia
                     </article>
-                </div>
-                <div class="destination-tabs">
-                    <button class="destination-tab">Adventure</button>
-                    #
-                </div>
-                <div class="destination-tabs">
-                    <button class="destination-tab">Beath</button>
-                    #
                 </div>
             </div>
         </section>
         <section class="quotes">
-            <article class="quote">
-                <img class="quote-sign" src="./content/quote.svg" alt="quote-mark">
-                <div class="quote-text">
-                    <h4 class="main-quote-text">Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</h4>
-                    <h5 class="quote-author">-Vand D</h5>
-                    <h5 class="quote-happy">Happy Treloo</h5>
-                </div>
-                <div class = "quote-icon">
-                    <img class="person-icon" src="./content/person1.png" alt="person1">
-                    <div class="destination-rating">
-                        <img class="star" src="./content/star.svg" alt="star">
-                        4.5
+            <div class="quotation">
+                <article class="quote">
+                    <img class="quote-sign" src="./content/quote.svg" alt="quote-mark">
+                    <div class="quote-text">
+                        <h4 class="main-quote-text">Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</h4>
+                        <h5 class="quote-author">-Vand D</h5>
+                        <h5 class="quote-happy">Happy Treloo</h5>
                     </div>
-                </div>
-            </article>
-            <article class="quote">
-                <img class="quote-sign" src="./content/quote.svg" alt="quote-mark">
-                <div class="quote-text">
-                    <h4 class="main-quote-text">Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</h4>
-                    <h5 class="quote-author">-Tru Vio</h5>
-                    <h5 class="quote-happy">Happy Treloo</h5>
-                </div>
-                <div class = "quote-icon">
-                    <img class="person-icon" src="./content/person2.png" alt="person1">
-                    <div class="destination-rating">
-                        <img class="star" src="./content/star.svg" alt="star">
-                        4.9
+                    <div class = "quote-icon">
+                        <img class="person-icon" src="./content/person1.png" alt="person1">
+                        <div class="destination-rating">
+                            <img class="star" src="./content/star.svg" alt="star">
+                            4.5
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
+                <article class="quote">
+                    <img class="quote-sign" src="./content/quote.svg" alt="quote-mark">
+                    <div class="quote-text">
+                        <h4 class="main-quote-text">Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</h4>
+                        <h5 class="quote-author">-Tru Vio</h5>
+                        <h5 class="quote-happy">Happy Treloo</h5>
+                    </div>
+                    <div class = "quote-icon">
+                        <img class="person-icon" src="./content/person2.png" alt="person1">
+                        <div class="destination-rating">
+                            <img class="star" src="./content/star.svg" alt="star">
+                            4.9
+                        </div>
+                    </div>
+                </article>
+            </div>
             <footer class="buttons">
                 <button class="pointer"><img class="pointer-sign" src="./content/left.svg"></button>
                 <button class="pointer"><img class="pointer-sign" src="./content/right.svg"></button>
