@@ -139,7 +139,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    bottom: -11vw;
+    bottom: -220px;
 }
 
 .buttons{
@@ -282,31 +282,54 @@ body{
 .t-selectors{
     display: flex;
     position: relative;
-    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+
 }
+
+.target-select{
+    background: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 22px;
+}
+
+.target-select:active{
+    background: #3E86F5;
+}
+
+.target-select:focus{
+    background: #3E86F5;
+}
+
 .offers{
     position: relative;
     
     display: flex;
+    gap: 10px;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 .target{
     position: relative;
-    width:100%;
+    width: 75%;
     align-items: center;
     display: flex;
     flex-direction: column;
+    gap:40px;
 }
 
 .target-content{
-    
+    width: 100%;
     position: relative;
     display: flex;
-    gap:20px;
-    width: auto;
-    justify-content: space-around;
+    /* gap:20px; */
+    /* width: auto; */
+    justify-content: space-between;
 }
 .special-offers{
     position: relative;
@@ -374,7 +397,7 @@ body{
     left: 10%;
     position: relative;
     display: flex;
-    width: 80%;
+    width: 75%;
     
 }
 .photo{
@@ -440,6 +463,7 @@ body{
 .destinations{
     position: relative;
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
 }
@@ -451,6 +475,15 @@ body{
 .destination-choices{
     display: flex;
     gap: 40px;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.destination-choice{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 .destination-example{
@@ -492,14 +525,13 @@ body{
 .quotation{
     width: 75%;
     position: relative;
-    /* left: 130px; */
     display: flex;
-    /* justify-content: center; */
+    justify-content: space-between;
     gap: 20px;
 }
 .quote{
     position: relative;
-    /* width: 40%; */
+    width: 40%;
     background: #FFFFFF;
     border-radius: 50px;
     display: flex;
@@ -524,8 +556,14 @@ body{
 }
 .quote-sign{
     position: absolute;
-    /* left: 40%; */
-    top: 10%;
+    top: 15%;
+}
+
+.main-quote-text{
+    padding:84px 25px 10px 47px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
 }
 .site-footer{
     position: relative;
